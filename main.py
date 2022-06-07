@@ -2,7 +2,6 @@ import math as m
 import numpy as np
 import tool
 import cv2
-import xlwt
 
 np.set_printoptions(threshold=np.inf)
 np.set_printoptions(suppress=True)
