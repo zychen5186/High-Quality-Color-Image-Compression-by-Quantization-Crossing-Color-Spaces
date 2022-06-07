@@ -10,5 +10,5 @@ An implementation of Zhu, Shuyuan Y., et al. "High-quality color image compressi
 - opencv
 
 ## Usage 
-Please add a folder named "output_image" in the same layer as main.py to save the reconstructed image.
-Put your images into the "dataset" folder and name them from 1 to the last number. The default data type in my code is .png. Change it if necessary.
+- Please add a folder named "output_image" in the same layer as main.py to save the reconstructed image.
+- Put your images into the "dataset" folder and name them from 1 to the last number. The default data type in my code is .png. Change it if necessary.
