@@ -168,10 +168,9 @@ def YCbCr_to_RpGpBp(Y, Cb, Cr):
     Bp = np.zeros(Cr.shape)
     for i in range(h):
         for j in range(w):
-            Rp[i, j] = clip(Y[i, j] + 1.57480 * Cr[i, j], 1, 0)
-            Gp[i, j] = clip(Y[i, j] - 0.18733 * Cb[i, j] -
-                            0.46812 * Cr[i, j], 1, 0)
-            Bp[i, j] = clip(Y[i, j] + 1.85560 * Cb[i, j], 1, 0)
+            Rp[i, j] = Y[i, j] + 1.57480 * Cr[i, j]
+            Gp[i, j] = Y[i, j] - 0.18733 * Cb[i, j] - 0.46812 * Cr[i, j]
+            Bp[i, j] = Y[i, j] + 1.85560 * Cb[i, j]
     return Rp, Gp, Bp
 
 
